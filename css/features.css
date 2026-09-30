@@ -1,0 +1,39 @@
+.features {
+}
+
+.features-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 100%;
+  height: 112px;
+
+  background: #f4f4fd;
+  margin-bottom: 8px;
+}
+
+.features-title {
+}
+
+.features-list {
+  display: flex;
+  gap: 24px;
+}
+
+.features-item {
+  width: calc((100% - 24px * 3) / 4);
+}
+
+.features-category {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+
+.features-desc {
+}
