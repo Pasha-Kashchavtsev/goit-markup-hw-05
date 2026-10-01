@@ -10,7 +10,7 @@
   visibility: hidden;
   pointer-events: none;
 
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) ease-out 250ms;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: opacity, visibility;
 }
 
@@ -39,14 +39,14 @@
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background-color: #fcfcfc;
 
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) ease-out 0ms;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: transform, opacity;
 }
 
 .backdrop.is-open .modal {
   transform: translate(-50%, -50%);
   opacity: 1;
-  transition-delay: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 250ms;
 }
 
 .modal-button-close {
@@ -63,7 +63,7 @@
   background-color: #e7e9fc;
   outline: transparent;
   cursor: pointer;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) ease-out;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: border-color, background-color;
 }
 
@@ -75,7 +75,7 @@
 
 .modal-icon-close {
   color: #2e2f42;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) ease-out;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button-close:hover > .modal-icon-close,
@@ -130,7 +130,7 @@
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   padding: 8px 38px;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1) ease-out;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-input:hover,
@@ -144,7 +144,7 @@
   transform: translateY(-50%);
   left: 16px;
   color: #2e2f42;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) ease-out;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   pointer-events: none;
 }
 
@@ -156,12 +156,18 @@
 .modal-form-comment {
   width: 100%;
   height: 120px;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #434455;
+
   outline: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   padding: 8px 16px;
   resize: none;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1) ease-out;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-comment:hover,
@@ -170,9 +176,6 @@
 }
 
 .modal-form-comment::placeholder {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
 }
 
@@ -182,7 +185,7 @@
 
 .modal-form-policy {
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
@@ -197,7 +200,7 @@
   border: 1px solid rgba(46, 47, 66, 0.4);
   margin-right: 8px;
   cursor: pointer;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) ease-out;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: border-color, background-color;
 }
 
@@ -216,7 +219,7 @@
   width: 10px;
   height: 8px;
   opacity: 0;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) ease-out;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: color, opacity;
 }
 
@@ -224,12 +227,11 @@
   + .modal-form-policy
   > .modal-form-checkbox
   .modal-form-check-icon {
-  color: #000;
+  color: #f4f4fd;
   opacity: 1;
 }
 
 .modal-form-link-policy {
-  line-height: 1.33;
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #4d5ae5;
