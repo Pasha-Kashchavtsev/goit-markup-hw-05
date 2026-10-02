@@ -53,14 +53,11 @@ button {
   color: #fff;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: #4d5ae5;
-  transition:
-    box-shadow 250ms ease-in-out,
-    background-color 250ms ease-in-out;
+  transition: background-color 250ms ease-in-out;
 }
 
 .global-button:hover,
 .global-button:focus {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: #404bbf;
 }
 
